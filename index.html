@@ -474,7 +474,7 @@ nav a{padding:14px 11px;font-size:10px;}
 <div class="team-chip">김동혁</div>
 <div class="team-chip">권혜인</div>
 <div class="team-chip">전보윤</div>
-<a class="repo-link" href="https://github.com/pbl1852/analysis-team" target="_blank">GitHub Repository</a>
+<a class="repo-link" href="https://github.com/Halpyy/pblstreamkus" target="_blank">GitHub Repository</a>
 </div>
 </section>
 
@@ -482,16 +482,16 @@ nav a{padding:14px 11px;font-size:10px;}
 <p class="section-label">01 · Introduction</p>
 <h2>Why This Analysis Matters</h2>
 <div class="card dark-card">
-<p>StreamKUS is a new media company preparing to release its first original content on YouTube and Netflix. Since audience preferences change quickly, relying only on intuition can be risky. Therefore, this project uses a data-driven approach to identify what kinds of genres, themes, and story elements appeal to viewers.</p>
-<p>For this report, our team analyzed eight popular contents across four genre categories: romance, thriller/crime, human and social documentary drama, and comedy. The selected contents were <em>Single's Inferno</em> and <em>When Life Gives You Tangerines</em> for romance, <em>Squid Game</em> and <em>Parasyte</em> for thriller, <em>There Are No Bad Dogs in the World</em> and <em>The Trauma Code</em> for slice of life, and <em>SNL Korea</em> and <em>Shortbox</em> for comedy. By comparing viewer reactions to these works, we aimed to discover patterns that can guide StreamKUS's future content planning.</p>
+<p>StreamKUS is a new media company preparing to release its first original content on YouTube and Netflix. Because content planning often depends on subjective judgment, a data-driven approach can help reduce personal bias and make the planning process more transparent. By analyzing actual viewer reactions, StreamKUS can identify which story elements, character types, emotional patterns, and content formats audiences repeatedly respond to.</p>
+<p>For this report, our team analyzed eight popular contents across four genre categories: emotional relationship content, suspense/survival content, human/social issue content, and comedy/relatable short-form content. The selected shows were <em>Single's Inferno</em> and <em>When Life Gives You Tangerines</em> for emotional relationship content, <em>Squid Game 2/3</em> and <em>Parasyte</em> for suspense/survival content, <em>There Are No Bad Dogs in the World</em> and <em>The Trauma Code</em> for human/social issue content, and <em>SNL Korea</em> and <em>Shortbox</em> for comedy/relatable short-form content. By comparing viewer reactions to these works, we aimed to discover patterns that can guide StreamKUS's future content planning.</p>
 <div class="table-wrap">
 <table>
 <thead><tr><th>Genre</th><th>Analyzed Contents</th></tr></thead>
 <tbody>
-<tr><td>Romance</td><td>솔로지옥, 폭싹 속았수다</td></tr>
-<tr><td>Thriller</td><td>오징어게임2/3, 기생수</td></tr>
-<tr><td>Slice of Life</td><td>세상에 나쁜 개는 없다, 중증외상센터</td></tr>
-<tr><td>Comedy</td><td>SNL, 숏박스</td></tr>
+<tr><td>Emotional Relationship Content</td><td>솔로지옥, 폭싹 속았수다</td></tr>
+<tr><td>Suspense/Survival Content</td><td>오징어게임2/3, 기생수</td></tr>
+<tr><td>Human/Social Issue Content</td><td>세상에 나쁜 개는 없다, 중증외상센터</td></tr>
+<tr><td>Comedy/Relatable Short-Form Content</td><td>SNL, 숏박스</td></tr>
 </tbody>
 </table>
 </div>
@@ -509,26 +509,57 @@ nav a{padding:14px 11px;font-size:10px;}
 <div class="card stat-card"><div class="stat-icon">🗂️</div><div class="stat-num">4</div><div class="stat-label">Genres Covered</div></div>
 </div>
 <div class="card">
-<p>We picked 4 different genres: romance, slice of life, thriller, and comedy, and picked 2 shows from each genre to analyze. The reason we divided our analysis targets into genres was because we would get a better understanding of what appeals more to what audience, and for what reason. We picked these 4 genres because they are historically among the most popular genres, and we thought that this would help us get a better idea for planning content.</p>
-<p><strong>Dramas:</strong> We used the most watched Netflix shows from 2024-25 from each genre: 1 romance, 1 slice of life, and 3 thriller. For Korean reviews, we used Watchapedia (pedia.watcha.com), and for English reviews, we used Rotten Tomatoes (rottentomatoes.com). For each show, we used Codex to collect all user reviews available without post filtering, and piled them into a CSV file.</p>
-<p><strong>Reality:</strong> We used 1 romance, 1 slice of life, and 2 comedy reality shows that gained traction in recent years, aired on Netflix, TV, YouTube, and Coupang Play respectively. We collected YouTube comments and posts on social media sites Nate (nate.com) and DCInside (dcinside.com), and piled them into a CSV file using Codex for analysis.</p>
+<p>In this report, the four categories are not used as strict industrial genre labels. Because the selected works include fiction, non-fiction, streaming dramas, reality shows, and YouTube-based content, we treated the categories as audience-response groups. The purpose was to compare different types of viewer appeal: emotional relationships, suspense and survival, human/social issues, and relatable comedy.</p>
+<p>We picked four different audience-response groups: emotional relationship content, suspense/survival content, human/social issue content, and comedy/relatable short-form content, which were picked in accordance to a survey conducted in June 2025 about popular content types. We selected two/three shows from each group to analyze. This structure allowed us to compare what viewers respond to across different types of appeal rather than treating all works as the same kind of media.</p>
+<p>We used multiple data sources because each platform shows a different type of audience reaction; Review platforms, YouTube comments, and social media do not represent the same audience behavior. Therefore, we treated them as seperate sources rather than identical data.</p>
+<p><strong>Dramas:</strong> We used the most watched Netflix shows from 2024-25 from each genre: 1 emotional relationship show, 1 human/social issue show, and 3 suspense/survival shows. For Korean reviews, we used Watchapedia (pedia.watcha.com), and for English reviews, we used Rotten Tomatoes (rottentomatoes.com). For each show, we used Codex to collect all user reviews available without post filtering, and piled them into a CSV file.</p>
 <p>For dramas, we used audience reviews, not critic reviews, as we thought that the overall reviews of a wider audience would be more fit for our needs than the more professional critic reviews. The same thought process went into collecting reality show reviews, as we thought YouTube comments as well as social media posts would be able to represent a wider audience, therefore leading to a better understanding of what the wider audience yearns.</p>
+<p><strong>Reality:</strong> We used 1 emotional relationship show, 1 human/social issue show, and 2 comedy/relatable short-form content reality shows that gained traction in recent years, aired on Netflix, TV(EBS), YouTube, and Coupang Play respectively. We collected YouTube comments and posts on social media sites Nate (nate.com) and DCInside (dcinside.com), and piled them into a CSV file using Codex for analysis.</p>
+<a href="https://drive.google.com/drive/folders/1IzeLTNBBaDALwh3zGL6ZNJ30jEwQUzxR?usp=drive_link" target="_blank">Folder with all the CSV files containing comments</a>
 </div>
+
+<img src="data-source-rationale.png" alt="Data Source Rationale" style="width:100%;display:block;margin-top:24px;border-radius:var(--radius-sm);" />
+<p>Because each platform has different user behavior, the findings in this report should be interpreted as platform-based audience reactions rather than as a complete representation of all viewers.</p>
 </section>
 
 <section id="methods">
 <p class="section-label">03 · Text Mining Methods</p>
 <h2>Analytical Techniques Used</h2>
 <div class="grid-3" style="margin-bottom:24px;">
-<div class="card method-card"><span class="method-badge">Method 01</span><h3>Sentiment Analysis</h3><p>We collected the sentiment analysis of the collected text using Colab.</p></div>
+<div class="card method-card"><span class="method-badge">Method 01</span><h3>Sentiment Analysis</h3><p>Google Colab was used as the coding environment. The actual text-mining methods were keyword frequency analysis, sentiment keyword classification, source comparison, and AI-assisted thematic review analysis.</p></div>
 <div class="card method-card"><span class="method-badge">Method 02</span><h3>AI-Assisted Review Analysis</h3><p>Gemini 3.1 Flash-Lite Preview was used to generate review summaries, key themes, positive points, negative points, and keyword lists.</p></div>
 <div class="card method-card"><span class="method-badge">Method 03</span><h3>Genre-Based Strategy</h3><p>We compared the main positive and negative points for each genre and show to identify what StreamKUS should do and avoid.</p></div>
 </div>
 <div class="card">
-<p>We collected the sentiment analysis of the collected text using Colab, and with Gemini 3.1 Flash-Lite Preview we used the following prompt:</p>
+<a href="https://colab.research.google.com/drive/116H4h0TPEySDIFW5DBKDdVyW8DWdSu9W" target="_blank">Link to original code</a>
+<p>We collected the sentiment analysis of the collected text using Colab as our coding environment, and with Gemini 3.1 Flash-Lite Preview we used the following prompt, which prints out the overall sentiment score out of 10, the frequency of each rating, main positive and negative points, and the most frequently mentioned topics and keywords:</p>
 <div class="prompt-box">"당신은 영화/TV 평론가이자 데이터 분석가입니다.전체 리뷰 중 {sample_size}개를 무작위로 추출한 데이터를 바탕으로 종합적인 리뷰 분석을 작성해 주세요.요구사항:**주의사항: 모든 분석 결과와 응답값은 반드시 '한국어(Korean)'로 작성해 주세요.**. 이 작품에 대한 사람들의 반응과 점수 분석 근거를 한국어로 명확하게 작성하세요. 긍정적 피드백, 부정적 피드백, 반복되는 주제를 배열 형태로 매우 상세하게 요약하세요. **중요**: 각 항목은 반드시 '**주제:** 설명' 형식으로 작성하세요. (예시: '**세계관의 확장:** 단순히 게임을 반복하는 것이 아니라...'). 샘플링된 리뷰들에서 가장 많이 언급된 핵심 키워드 상위 10개를 추출하고, 해당 키워드가 샘플 리뷰 내에서 대략 몇 번 언급되었는지 빈도수를 추정하여 포함하세요. 결론을 한국어로 작성하세요."</div>
-<p>The result printed the overall sentiment score out of 10, the frequency of each number, main positive and negative points, and the most frequently mentioned topics and keywords.</p>
+<p>For the AI-assisted review analysis, we sampled 100 reviews at a time to prevent errors occurring from a data overload. However, the analysis itself was done at once and the 100 samples were saved separately, allowing for a total overview and not just a sample overview.</p>
 <p>Because our end goal is proposing content for our streaming platform, we analyzed the main positive and negative points for each genre/show and used them to pinpoint what we need to do and what to avoid when making a show for each genre.</p>
+<a href="https://docs.google.com/spreadsheets/d/1P93pi1ir2HVLLKURNG_AwNTL0Bfn_ltB-zj2Kj7W5tk/edit?gid=1163432579#gid=1163432579" target="_blank">Link to all analyses compiled</a>
+<img src="analysis-example.png" style="max-width: 100%; height: auto;" alt="Analysis Example" />
+<p><i>An example of an analysis given by AI</i></p>
+</div>
+
+<div class="card">
+<p>We double-checked the analyzed data using AI as a fact checking tool, and all findings came up with a score of 90 or above, meaning it is an accurate representation of the data provided. The prompt we used is as follows:</p>
+<div class="prompt-box">당신은 엄격하고 객관적인 'AI 팩트체커(Fact-Checker)'입니다.
+다른 AI가 이전 데이터를 바탕으로 작성한 [1차 요약 결과]가 주어집니다.
+당신의 임무는 아래에 제공된 [검증용 리뷰 샘플 {verify_sample_size}개]를 읽고, 1차 요약 결과가 이 샘플에서도 똑같이 타당한지(과장되거나 거짓된 내용은 없는지) 검증하는 것입니다.
+
+[1차 요약 결과]
+- 긍정적 피드백: {summary_data.get('positive_feedback', [])}
+- 부정적 피드백: {summary_data.get('negative_feedback', [])}
+- 반복되는 주제: {summary_data.get('recurring_themes', [])}
+
+[요구사항]
+**주의사항: 모든 응답은 반드시 '한국어(Korean)'로 작성해 주세요.**
+1. 1차 요약 결과의 각 항목들이 검증용 리뷰 샘플에서도 실제로 나타나는지 꼼꼼히 검증하세요.
+2. 타당하다면 true, 증거가 부족하거나 과장되었다면 false로 표기하고 그 이유와 실제 리뷰의 예시를 인용하여 적어주세요.
+3. 1차 요약의 전체적인 객관성과 신뢰도를 0점에서 100점 사이로 평가하세요.
+4. 마지막으로 검증 결과에 대한 총평을 작성하세요.</div>
+  <img src="check-example.png" style="max-width: 100%; height: auto;" alt="Fact Check Example" />
+</p><i>An example of a double check done of an analysis by AI</i></p>
 </div>
 </section>
 
@@ -540,7 +571,7 @@ nav a{padding:14px 11px;font-size:10px;}
   <div class="gs-header">
     <div class="gs-icon">💗</div>
     <div class="gs-meta">
-      <div class="gs-title">Romance</div>
+      <div class="gs-title">Emotional Relationship Content</div>
       <div class="gs-target">Women in their 10s, 20s, and 40s</div>
     </div>
     <div class="gs-rules">
@@ -552,7 +583,7 @@ nav a{padding:14px 11px;font-size:10px;}
         <div class="gs-rule-label avoid">WHAT WE SHOULD AVOID</div>
         <ul class="gs-list"><li>Unnecessary long scenes</li><li>Incomplete or weak plot structure</li><li>Poor editing in reality-style content</li></ul>
       </div>
-      <div class="gs-insight"><strong>Strategy Insight:</strong> Romance content should focus on sincere emotions, strong character relationships, and visually warm storytelling.</div>
+      <div class="gs-insight"><strong>Strategy Insight:</strong> Romance content should focus on sincere emotions, strong character relationships, and visually warm storytelling. These traits apply to both fictional and non-fictional shows.</div>
     </div>
   </div>
   <div class="gs-charts"><div class="sb-block">
@@ -576,8 +607,8 @@ nav a{padding:14px 11px;font-size:10px;}
   <div class="gs-header">
     <div class="gs-icon">🎭</div>
     <div class="gs-meta">
-      <div class="gs-title">Slice of Life</div>
-      <div class="gs-target">Men 20s, 30s, 50+ / Women 40s</div>
+      <div class="gs-title">Human/Social Issue Content</div>
+      <div class="gs-target">Men in their 20s, 30s, 50+ / Women in their 40s</div>
     </div>
     <div class="gs-rules">
       <div class="gs-rules-col">
@@ -612,7 +643,7 @@ nav a{padding:14px 11px;font-size:10px;}
   <div class="gs-header">
     <div class="gs-icon">🔍</div>
     <div class="gs-meta">
-      <div class="gs-title">Thriller</div>
+      <div class="gs-title">Suspense/Survival Content</div>
       <div class="gs-target">Men in their 10s, 20s, 40s, and 50+</div>
     </div>
     <div class="gs-rules">
@@ -650,8 +681,8 @@ nav a{padding:14px 11px;font-size:10px;}
   <div class="gs-header">
     <div class="gs-icon">😄</div>
     <div class="gs-meta">
-      <div class="gs-title">Comedy</div>
-      <div class="gs-target">Men 40s, 50+ / Women 40s</div>
+      <div class="gs-title">Comedy/Relatable Short-Form Content</div>
+      <div class="gs-target">Men in their 40s, 50+ / Women in their 40s</div>
     </div>
     <div class="gs-rules">
       <div class="gs-rules-col">
@@ -679,6 +710,7 @@ nav a{padding:14px 11px;font-size:10px;}
   </div>
 </div></div>
 </div>
+<p>The age and gender group for each category is from a survey conducted in June 2025.</p>
 
 </section>
 
@@ -692,14 +724,14 @@ nav a{padding:14px 11px;font-size:10px;}
 <div class="proposal-num">1</div>
 <div class="summary-title">
 <h3>When The Seasons Stay</h3>
-<span>우리의 계절은 아직 · Romance · 6-Part Netflix Series</span>
+<span>우리의 계절은 아직 · Emotional Relationship · 6-Part Netflix Series</span>
 </div>
 <div class="toggle-icon"></div>
 </summary>
 <div class="proposal-body">
 <div class="meta-list">
-<span>Genre: Romance</span>
-<span>Target: Women in their 10s, 20s, and 40s</span>
+<span>Genre: Emotional Relationship</span>
+<span>Target: Viewers who enjoy a heartful and dramatic portrayal of human emotions and relationships</span>
 <span>Format: 6-Part Netflix Series</span>
 </div>
 <p>StreamKUS proposes "When the Seasons Stay" as its first original emotional romance and family healing drama series. The story follows people who reconnect with love, family, and forgotten relationships while navigating the emotional changes of adulthood.</p>
@@ -717,7 +749,11 @@ nav a{padding:14px 11px;font-size:10px;}
 <li><strong>Ep.6: When The Seasons Stay</strong> (우리의 계절은 아직) — Accepting love, family, and moving forward</li>
 </ol>
 <div class="reason-box">
-<p><strong>Reasons based on collected data:</strong> Text-mining analysis revealed that viewers strongly respond to the emotional humanism that is characteristic of Korean romance dramas. Audience reactions frequently included keywords such as cried, love, family, and touching, indicating that viewers value emotionally sincere stories about relationships, family bonds, healing, and meaningful human connections.</p>
+<p><strong>Reasons based on collected data:</strong>  This proposal is directly connected to the romance analysis in three ways.
+<br><b>First</b>, Single’s Inferno and When Life Gives You Tangerines were not treated as identical types of romance content. Single’s Inferno was used as a reference for romance reality content, where viewer reactions were strongly centered on cast members, individual personalities, relationship dynamics, and visible chemistry. Since many frequent keywords from Single’s Inferno were cast member names, we did not interpret this simply as proof of “good cast.” Instead, we interpreted it as evidence that memorable individuals and relationship tension are important in romance reality content. This finding was reflected in When The Seasons Stay by designing a small central cast with clear personalities, strong chemistry, and unresolved emotional tension.
+<br><b>Second</b>, because When The Seasons Stay is a scripted romance drama, When Life Gives You Tangerines was used as the main reference for the proposal. Text-mining analysis showed that viewers responded strongly to emotional humanism, family relationships, healing, and sincere storytelling. Audience reactions frequently included keywords such as cried, love, family, and touching. Therefore, When The Seasons Stay focuses on family-centered storytelling, emotional wounds, reconciliation, and healing relationships rather than only confession, breakup, or romantic excitement.
+<br><b>Third</b>, the negative feedback in the romance data included unnecessary long scenes, weak plot structure, and poor pacing or editing in reality-style content. To avoid these problems, the series is designed as a six-episode format, with each episode centered on one clear emotional conflict and one stage of relationship development. This structure is intended to reduce filler scenes and make the emotional progression easier to follow.
+</p>
 </div>
 </div>
 </details>
@@ -727,13 +763,14 @@ nav a{padding:14px 11px;font-size:10px;}
 <div class="proposal-num">2</div>
 <div class="summary-title">
 <h3>The Second Golden Time</h3>
-<span>두 번째 골든타임 · Slice of Life · Netflix Series + Short-Form Content</span>
+<span>두 번째 골든타임 · Human/Social Issue · Netflix Series + Short-Form Content</span>
 </div>
 <div class="toggle-icon"></div>
 </summary>
 <div class="proposal-body">
 <div class="meta-list">
-<span>Genre: Slice of Life</span>
+<span>Genre: Human/Social Issues</span>
+<span>Target: Viewers who enjoy realistic human stories, social issues, emotional sincerity, and medical teamwork</span>
 <span>Format: 6-Part Netflix Series with Short-Form Content</span>
 </div>
 <p>The Second Golden Time is a human and social documentary drama that focuses on what happens after a patient survives an emergency. Each episode begins with an urgent medical case, such as a traffic accident, workplace injury, or emergency room crisis. However, instead of ending with a successful surgery, the story follows the patient's second crisis after survival: medical bills, lack of caregivers, trauma, unemployment, family conflict, and social isolation.</p>
@@ -748,7 +785,11 @@ nav a{padding:14px 11px;font-size:10px;}
 <li><strong>Ep.6: 72 Hours After Discharge</strong> — Following a patient for 72 hours after discharge and showing how healthcare and community support should be connected</li>
 </ol>
 <div class="reason-box">
-<p><strong>Reasons based on collected data:</strong> This proposal is based on our finding that viewers of The Trauma Code responded positively to fast pacing, charismatic characters, team chemistry, cathartic moments, and criticism of the medical system. Keywords such as fast-paced, characters, satisfying, medical system, and teamwork appeared repeatedly. However, viewers also criticized exaggerated scenes, unrealistic hero-like protagonists, and predictable medical drama clichés. Therefore, The Second Golden Time keeps the strengths of The Trauma Code, such as tension, teamwork, and social criticism, but avoids excessive hero fantasy by focusing on more realistic problems after emergency treatment.</p>
+<p><strong>Reasons based on collected data:</strong> This proposal is directly connected to the human/social issue content analysis in three ways.
+<br><b>First</b>, the analysis of The Trauma Code showed that viewers responded positively to fast pacing, urgent situations, charismatic characters, team chemistry, cathartic moments, and criticism of the medical system. Therefore, The Second Golden Time keeps the tension of emergency medical situations and the teamwork between professionals, but expands the story beyond the hospital scene.
+<br><b>Second</b>, the analysis showed that viewers also valued meaningful messages, emotional sincerity, and realistic human stories in human-centered content. Because of this, the proposal focuses not only on the moment when a patient survives, but also on what happens after survival, such as medical bills, lack of caregivers, trauma, unemployment, family conflict, and social isolation. This reflects the finding that viewers respond well when human and social dramas combine emotional storytelling with a clear social message.
+<br><b>Third</b>, the negative feedback in this category included unrealistic scenes, exaggerated hero-like characters, predictable drama clichés, and repetitive structure. To avoid these problems, The Second Golden Time does not center only on one perfect heroic doctor. Instead, each episode follows a different patient and social problem after emergency treatment. This structure is intended to make the story more realistic, reduce repetition, and connect medical tension with broader social issues.
+</p>
 </div>
 </div>
 </details>
@@ -758,14 +799,14 @@ nav a{padding:14px 11px;font-size:10px;}
 <div class="proposal-num">3</div>
 <div class="summary-title">
 <h3>Dead Chamber</h3>
-<span>죽음의 룰렛 · Thriller · 6-Part Netflix Series</span>
+<span>죽음의 룰렛 · Suspense/Survival · 6-Part Netflix Series</span>
 </div>
 <div class="toggle-icon"></div>
 </summary>
 <div class="proposal-body">
 <div class="meta-list">
-<span>Genre: Thriller</span>
-<span>Target: Men in their 10s, 20s, 40s, 50s and above</span>
+<span>Genre: Suspense/Survival</span>
+<span>Target: Viewers who enjoy suspense, survival games, psychological tension, moral conflict, and high-immersion thrillers</span>
 <span>Format: 6-Part Netflix Series</span>
 </div>
 <p>StreamKUS proposes "Dead Chamber" as its first original psychological survival thriller series. The story follows six strangers who are invited to participate in a mysterious roulette game where each spin determines life or death.</p>
@@ -782,7 +823,11 @@ nav a{padding:14px 11px;font-size:10px;}
 <li><strong>Ep.6: Dead Chamber</strong> (죽음의 룰렛) — The truth behind the game is uncovered</li>
 </ol>
 <div class="reason-box">
-<p><strong>Reasons based on collected data:</strong> According to recent popularity rankings on Netflix, survival thrillers have consistently attracted strong audience attention, as shown by the global success of series such as Squid Game and Parasyte: The Grey. Text-mining analysis of viewer reviews on Watcha and Rotten Tomatoes also revealed that keywords such as immersion, visual excitement, video quality, and CG appeared frequently in thriller-related discussions. These findings suggest that audiences strongly value visually engaging experiences, cinematic tension, and high-quality production elements within the thriller genre.</p>
+<p><strong>Reasons based on collected data:</strong> This proposal is directly connected to the thriller analysis in three ways.
+<br><b>First</b>, the analysis of thriller content showed that viewers responded positively to suspense, immersion, creative storylines, strong acting, visual quality, and CG-based production. Therefore, Dead Chamber is designed as a psychological survival thriller with a strong visual concept, a closed game space, intense sound design, and cinematic tension built around a deadly roulette game.
+<br><b>Second</b>, the data showed that viewers enjoy thriller content when it creates uncertainty, moral conflict, and discussion after watching. Because of this, Dead Chamber is not designed as a simple action-based survival game. Instead, the roulette system forces characters to make choices involving trust, betrayal, guilt, and survival. This reflects the finding that audiences value thrillers that combine visual excitement with psychological pressure.
+<br><b>Third</b>, the negative feedback in thriller data included weak logic, underwhelming endings, and too much similarity to previous survival shows. To avoid these problems, Dead Chamber is structured around hidden rules and gradual revelations, so that each episode explains more about the system behind the game. The final episode is designed to resolve the central mystery rather than only deliver shock. Also, instead of copying a general survival-game format, the roulette mechanism emphasizes randomness, fate, and moral responsibility, giving the proposal a clearer difference from existing works.
+</p>
 </div>
 </div>
 </details>
@@ -792,15 +837,15 @@ nav a{padding:14px 11px;font-size:10px;}
 <div class="proposal-num">4</div>
 <div class="summary-title">
 <h3>We're Not Done Yet</h3>
-<span>우리 아직 안 끝났어 · Comedy · YouTube + Netflix Expansion Potential</span>
+<span>우리 아직 안 끝났어 · Comedy/Relatable · YouTube + Netflix Expansion Potential</span>
 </div>
 <div class="toggle-icon"></div>
 </summary>
 <div class="proposal-body">
 <div class="meta-list">
-<span>Genre: Comedy</span>
-<span>Target: 20s and 30s with high media usage</span>
-<span>Format: YouTube Upload with Netflix Expansion Potential</span>
+<span>Genre: Comedy/Relatable</span>
+<span>Target: Viewers who enjoy relatable everyday comedy, relationship humor, satire, and short-form content</span>
+<span>Format: YouTube Series with Netflix Expansion Potential</span>
 </div>
 <p>This show follows a couple who have gotten married after seven years of dating, but run into realistic fights and laughs as newlyweds.</p>
 <p>Unlike existing shows which focus on the talking, dating, breakup, and marriage stage, this show focuses on life after marriage. It wants to show that marriage is not a happy ending but a start of something new, as the couple run into unexpected situations after becoming husband and wife.</p>
@@ -815,7 +860,11 @@ nav a{padding:14px 11px;font-size:10px;}
 <li><strong>Ep.6: You've Got Company</strong> (회사 사람 앞 내 배우자) — Social life after marriage</li>
 </ol>
 <div class="reason-box">
-<p><strong>Reasons based on collected data:</strong> After analyzing YouTube comments and social media posts about Shortbox, we concluded that viewers reacted better to comedy when it is based on relatable aspects of life. There were also many requests for an expansion on this series, along with mentions of keywords such as newlywed, military service, work, and marriage. This was the reason behind the format allowing for expansion. If the series expands, viewer comments can be used to decide the topic of future episodes, helping the show avoid repetition and better match viewer wants and needs. Since some comments reacted negatively with words such as boring, repetitive, and stop, we chose life after marriage as a relatively less common topic.</p>
+<p><strong>Reasons based on collected data:</strong> This proposal is directly connected to the comedy analysis in three ways.
+<br><b>First</b>, the analysis of Shortbox and SNL showed that viewers responded positively to relatable everyday situations, relationship-based humor, easy-to-understand comedy, character-driven jokes, and social satire. Therefore, We’re Not Done Yet focuses on realistic conflicts that many viewers can recognize, such as dating after marriage, housewarming, in-law communication, money management, repeated past stories, and social life after marriage.
+<br><b>Second</b>, the Shortbox data included repeated keywords and comments related to future content expansion, such as newlywed, marriage, military service, work, series, next episode, and make more. Because of this, the proposal uses a YouTube-first format with Netflix expansion potential. The first season focuses on life after marriage, but the format can expand into future episodes based on viewer comments and repeated audience requests.
+<br><b>Third</b>, the negative feedback in the comedy data included boring, repetitive, forced, exaggerated, uncomfortable, and too political. To avoid these problems, We’re Not Done Yet does not depend on extreme situations or one-time jokes. Instead, each episode is based on a specific everyday conflict and character relationship. The topic of life after marriage was chosen because it extends relationship comedy beyond the more common dating, breakup, and confession stages, reducing the risk of repeating familiar short-form romance comedy patterns.
+</p>
 </div>
 </div>
 </details>
@@ -826,9 +875,9 @@ nav a{padding:14px 11px;font-size:10px;}
 <section id="limitations">
 <p class="section-label">06 · Limitations</p>
 <h2>Research Constraints</h2>
-<div class="limit-item"><div class="limit-icon">⚠️</div><div><h3>Limited Data Scope</h3><p>The data came mainly from publicly available reviews, YouTube comments, and online community posts. These comments do not represent all viewers because people who post online are usually more active, emotional, or opinionated than silent viewers.</p></div></div>
-<div class="limit-item"><div class="limit-icon">⚠️</div><div><h3>Platform Differences</h3><p>The amount and type of data differed depending on the content and platform. Some works had many YouTube comments, while others had more review-site data or community discussions, which made direct comparison difficult.</p></div></div>
-<div class="limit-item"><div class="limit-icon">⚠️</div><div><h3>Text Mining Limits</h3><p>Slang, memes, sarcasm, abbreviations, swear words, and community-specific expressions are difficult for AI tools to understand accurately. Because of this, some audience reactions may have been misclassified or not fully reflected in the analysis.</p></div></div>
+<div class="limit-item"><div class="limit-icon">⚠️</div><div><h3>Limited Data Scope</h3><p>The data came mainly from publicly available reviews, YouTube comments, and online community posts. These comments do not represent all viewers because people who post online are usually more active, emotional, or opinionated than silent viewers, however we came to the conclusion that even with these limitations, this was the best method to gather insights.</p></div></div>
+<div class="limit-item"><div class="limit-icon">⚠️</div><div><h3>Platform Differences</h3><p>The amount and type of data differed depending on the content and platform. Some works had many YouTube comments, while others had more review-site data or community discussions, which made direct comparison difficult. In addition, users on different platforms may express their opinions in different ways, which could have influenced the results. Future research could reduce this limitation by collecting a more balanced amount of data across platforms and content types to improve the comparability of the datasets.</p></div></div>
+<div class="limit-item"><div class="limit-icon">⚠️</div><div><h3>Text Mining Limits</h3><p>Slang, memes, sarcasm, abbreviations, swear words, and community-specific expressions are difficult for AI tools to understand accurately. Because of this, some audience reactions may have been misclassified or not fully reflected in the analysis. As such, the results were interpreted in relation to the original comments to ensure general consistency.</p></div></div>
 </section>
 
 <section id="conclusion">
@@ -838,22 +887,22 @@ nav a{padding:14px 11px;font-size:10px;}
 
   <div class="conclusion-main card conclusion-main-card">
     <div class="concl-main-title">Main Takeaway</div>
-    <p>This project aimed to help StreamKUS plan its first original content through a data-driven approach rather than relying only on intuition. By analyzing audience reviews, YouTube comments, and online community discussions across romance, thriller, slice of life, and comedy, we identified several patterns in what viewers respond to most strongly.</p>
+    <p>This project aimed to help StreamKUS plan its first original content through a data-driven approach rather than relying only on intuition. By analyzing audience reviews, YouTube comments, and online community discussions across emotional relationship, suspense/survival, human/social issue, and comedy/relatable content, we identified several patterns in what viewers respond to most strongly.</p>
     <div class="concl-genre-grid">
       <div class="concl-genre-chip romance-chip">
-        <span class="concl-chip-label">Romance</span>
+        <span class="concl-chip-label">Emotional Relationship Content</span>
         <span class="concl-chip-text">Emotional storytelling, family relationships, healing, and warm visuals.</span>
       </div>
       <div class="concl-genre-chip slice-chip">
-        <span class="concl-chip-label">Slice of Life</span>
+        <span class="concl-chip-label">Human/Social Issue Content</span>
         <span class="concl-chip-text">Meaningful messages, realistic characters, education, and sincerity.</span>
       </div>
       <div class="concl-genre-chip thriller-chip">
-        <span class="concl-chip-label">Thriller</span>
+        <span class="concl-chip-label">Suspense/Survival Content</span>
         <span class="concl-chip-text">Creative storylines, suspense, visual quality, and immersive tension.</span>
       </div>
       <div class="concl-genre-chip comedy-chip">
-        <span class="concl-chip-label">Comedy</span>
+        <span class="concl-chip-label">Comedy/Relatable Content</span>
         <span class="concl-chip-text">Relatable everyday topics, character humor, satire, and social commentary.</span>
       </div>
     </div>
@@ -885,16 +934,17 @@ nav a{padding:14px 11px;font-size:10px;}
 <p class="section-label">08 · References</p>
 <h2>Sources &amp; Citations</h2>
 <div class="card">
-<div class="ref-item"><span class="ref-num">[1]</span><span><a href="https://flixpatrol.com/" target="_blank" rel="noopener noreferrer">https://flixpatrol.com/</a></span></div>
-<div class="ref-item"><span class="ref-num">[2]</span><span><a href="https://www.banronbodo.com/news/articleView.html?idxno=30518" target="_blank" rel="noopener noreferrer">https://www.banronbodo.com/news/articleView.html?idxno=30518</a></span></div>
-<div class="ref-item"><span class="ref-num">[3]</span><span><a href="https://www.banronbodo.com/news/articleView.html?idxno=30515" target="_blank" rel="noopener noreferrer">https://www.banronbodo.com/news/articleView.html?idxno=30515</a></span></div>
-<div class="ref-item"><span class="ref-num">[4]</span><span><a href="https://pedia.watcha.com/ko" target="_blank" rel="noopener noreferrer">https://pedia.watcha.com/ko</a></span></div>
-<div class="ref-item"><span class="ref-num">[5]</span><span><a href="https://www.rottentomatoes.com/" target="_blank" rel="noopener noreferrer">https://www.rottentomatoes.com/</a></span></div>
-<div class="ref-item"><span class="ref-num">[6]</span><span><a href="https://colab.research.google.com/drive/116H4h0TPEySDIFW5DBKDdVyW8DWdSu9W" target="_blank" rel="noopener noreferrer">https://colab.research.google.com/drive/116H4h0TPEySDIFW5DBKDdVyW8DWdSu9W</a></span></div>
-<div class="ref-item"><span class="ref-num">[7]</span><span><a href="https://theqoo.net/square/2487689967" target="_blank" rel="noopener noreferrer">https://theqoo.net/square/2487689967</a></span></div>
-<div class="ref-item"><span class="ref-num">[8]</span><span><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=414021" target="_blank" rel="noopener noreferrer">https://gall.dcinside.com/board/view/?id=dcbest&amp;no=414021</a></span></div>
-<div class="ref-item"><span class="ref-num">[9]</span><span><a href="https://www.fmkorea.com/9667456984" target="_blank" rel="noopener noreferrer">https://www.fmkorea.com/9667456984</a></span></div>
-<div class="ref-item"><span class="ref-num">[10]</span><span><a href="https://docs.google.com/spreadsheets/d/1P93pi1ir2HVLLKURNG_AwNTL0Bfn_ltB-zj2Kj7W5tk/edit" target="_blank" rel="noopener noreferrer">https://docs.google.com/spreadsheets/d/1P93pi1ir2HVLLKURNG_AwNTL0Bfn_ltB-zj2Kj7W5tk/edit</a></span></div>
+<div class="ref-item"><span class="ref-num">[1]</span><span><a href="https://flixpatrol.com/" target="_blank" rel="noopener noreferrer">https://flixpatrol.com/ - Used for selection of Netflix shows</a></span></div>
+<div class="ref-item"><span class="ref-num">[2]</span><span><a href="https://www.banronbodo.com/news/articleView.html?idxno=30518" target="_blank" rel="noopener noreferrer">https://www.banronbodo.com/news/articleView.html?idxno=30518 - Used for selection of genres</a></span></div>
+<div class="ref-item"><span class="ref-num">[3]</span><span><a href="https://www.banronbodo.com/news/articleView.html?idxno=30515" target="_blank" rel="noopener noreferrer">https://www.banronbodo.com/news/articleView.html?idxno=30515 - Used for selection of genres</a></span></div>
+<div class="ref-item"><span class="ref-num">[4]</span><span><a href="https://pedia.watcha.com/ko" target="_blank" rel="noopener noreferrer">https://pedia.watcha.com/ko - Used for Korean reviews</a></span></div>
+<div class="ref-item"><span class="ref-num">[5]</span><span><a href="https://www.rottentomatoes.com/" target="_blank" rel="noopener noreferrer">https://www.rottentomatoes.com/ - Used for English reviews</a></span></div>
+<div class="ref-item"><span class="ref-num">[6]</span><span><a href="https://colab.research.google.com/drive/116H4h0TPEySDIFW5DBKDdVyW8DWdSu9W" target="_blank" rel="noopener noreferrer">https://colab.research.google.com/drive/116H4h0TPEySDIFW5DBKDdVyW8DWdSu9W - Code for analysis</a></span></div>
+<div class="ref-item"><span class="ref-num">[7]</span><span><a href="https://theqoo.net/square/2487689967" target="_blank" rel="noopener noreferrer">https://theqoo.net/square/2487689967 - Used for Korean community discussions</a></span></div>
+<div class="ref-item"><span class="ref-num">[8]</span><span><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=414021" target="_blank" rel="noopener noreferrer">https://gall.dcinside.com/board/view/?id=dcbest&amp;no=414021- Used for Korean community discussions</a></span></div>
+<div class="ref-item"><span class="ref-num">[9]</span><span><a href="https://www.fmkorea.com/9667456984" target="_blank" rel="noopener noreferrer">https://www.fmkorea.com/9667456984 - Used for Korean community discussions</a></span></div>
+<div class="ref-item"><span class="ref-num">[10]</span><span><a href="https://docs.google.com/spreadsheets/d/1P93pi1ir2HVLLKURNG_AwNTL0Bfn_ltB-zj2Kj7W5tk/edit" target="_blank" rel="noopener noreferrer">https://docs.google.com/spreadsheets/d/1P93pi1ir2HVLLKURNG_AwNTL0Bfn_ltB-zj2Kj7W5tk/edit - Compiled review analyses</a></span></div>
+<div class="ref-item"><span class="ref-num">[11]</span><span><a href="https://drive.google.com/drive/folders/1IzeLTNBBaDALwh3zGL6ZNJ30jEwQUzxR?usp=drive_link" target="_blank" rel="noopener noreferrer">https://drive.google.com/drive/folders/1IzeLTNBBaDALwh3zGL6ZNJ30jEwQUzxR?usp=drive_link - CSV files containing comments</a></span></div>
 </div>
 </section>
 
